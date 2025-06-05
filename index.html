@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>Quick List</title>
 </head>
 <body>
     <header>
         <img src="./assets/logo.png" alt="logo quicklist">
+        <button>
+            <i class="ph ph-arrow-left"></i>
+            Voltar
+        </button>
+        <h1>Compras da semana</h1>
     </header>
+
+    <main>
+        <section class=cadd-item">
+            <input type="text" placeholder="Adicione um novo item" id="item">
+            <button>Adicionar item</button>
+        </section>
+        <section class="list">
+           <div class="item">
+            <div>
+                <input type="checkbox" name="list" id="item-1">
+                <div class="custom-checkbox">
+                    <img src="./assets/checked.svg" alt="checked">
+                    <label for="item-1">Maçã</label>
+                </div>
+
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash-icon">
+                </button>
+            </div>
+           </div>
+        </section>
+    </main>
+
 </body>
 </html>
