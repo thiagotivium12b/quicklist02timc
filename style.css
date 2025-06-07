@@ -142,7 +142,7 @@ button{
             display: none;
         }
 
-         .custom-checkbox {
+         .custom {
             width: 1.6rem;
             height: 1.6rem;
             border: 1px solid var(--border-primary);
@@ -210,6 +210,11 @@ button{
         border: none;
         background: none;
         color: var(--always-white);
+       }
+
+       .hide-warning {
+        opacity: 0;
+        transform: translateY(-18px);
        }
 
     }
