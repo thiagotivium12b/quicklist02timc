@@ -142,7 +142,7 @@ button{
             display: none;
         }
 
-         .{
+         .custom-checkbox {
             width: 1.6rem;
             height: 1.6rem;
             border: 1px solid var(--border-primary);
@@ -180,6 +180,27 @@ button{
             }
 
         }
+    }
+
+    .warning {
+        background: var(--color-danger);
+        color: var(--always-white);
+        padding: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1.rem;
+        margin-top: 2.4rem ;
+        /* efeitos para a hora em que for aparecer*/
+        opacity: 1;
+        transform: translate(0);
+        transition: opacity .4s ease, tranform .4s ease;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+        }
+
     }
 }
 
