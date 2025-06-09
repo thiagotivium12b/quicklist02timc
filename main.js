@@ -33,14 +33,32 @@ function showitemsList() {
                     <label for="item-${index}>${item.name}</label>
                 </div>
 
-                <button>
+                <button-onclick="removeitem("">
                     <img src="./assets/trash-icon.svg" alt="trash-icon">
-                </button>
+                </button-onclick=>
             </div>
            
+
+           function removeitem(itemname) {
+            const itemindex = items.findindex((item) => item.name === itemName)
+            const divWarning = document.querySelector(".warning")
+             
+            divWarning.classList.remove("-hide-warning")
+
+            if(itemIndex !== -1) {
+                items.splice(itemIndex, 1)
+            }
+            
+
+            snowitemsList() 
+
+
+ }
+
+
         
 
-    }
+    
 
 
 
