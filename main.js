@@ -1,6 +1,4 @@
-// array (vetor)
-// objetos
-const items = []
+let items = []
 
 function additem() {
     const itemName = document.querySelector("#item").value
@@ -42,6 +40,10 @@ function showitemsList() {
                     <img src="./assets/trash-icon.svg" alt="trash-icon">
                 </button-onclick=>
             </div>
+          .
+ }) 
+
+     localStorag.setItem("items", JSON.stringify(items))
            
 function checkItem(itemName) {
     const item = items.find((item) => item.name === itemName)
@@ -76,6 +78,17 @@ function checkItem(itemName) {
   function addHideWarningclass() {
     document.querySelector(".warning").classList.add("hide-warning")
   }
+
+  function verifyLocalStorageItems() {
+    const localStorageItems = localStorage.getItem("items")
+
+    if (localstorageItems) {
+        items = JSON.parse(localStorageItems)
+        showitemsList()
+    }
+  }
+
+  verifyLocalStorageItems()
 
 
         
