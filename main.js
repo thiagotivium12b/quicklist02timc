@@ -25,6 +25,8 @@ function showitemsList() {
     const sectionList = document.querySelector(".list")
     sectionList.textContent = "nada" 
 
+    items.sort((itemA, itemB) => Number(itemA.checked) - Number(itemB.checked))
+
 
     items.map ((item, index ) => ){
         sectionList.innerHTML +=
