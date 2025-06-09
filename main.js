@@ -55,9 +55,12 @@ function showitemsList() {
             
 
             snowitemsList() 
-
-
  }
+  
+
+  function addHideWarningclass() {
+    document.querySelector(".warning").classList.add("hide-warning")
+  }
 
 
         
